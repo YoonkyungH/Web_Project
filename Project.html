@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>MU_SIC</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+      .container{
+        width: 1080px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        margin-left:30px;
+        overflow: hidden;
+        margin-right:0px;
+      }
+      .menu{
+        float:left;
+        padding-top:8px;
+        padding-bottom:0px;
+        padding-left:0px;
+        padding-right:0px;
+      }
+      li{
+        list-style-type: none;
+        float:left;
+        padding-left:300px;
+        padding-top:10px;
+      }
+      #menu_notice{
+        padding-left:100px;
+      }
+      #icon{
+        float:left;
+        padding-left:0px;
+        padding-top:0px;
+      }
+      #search{
+        float:left;
+        width:80px;
+      }
+      table{
+        float:right;
+        width:100px;
+      }
+      input{
+        border-radius: 20px;;
+      }
+      hr{
+        margin-top: 80px;
+        height:0px;
+        width:1300px;
+        border: 1;
+        align:center;
+        color:rgb(202, 224, 238)
+      }
+      #album_cover{
+        margin-left:100px;
+        width:300px;
+        height:300px;
+        opacity:0.5;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <span class="container">
+        <ul class="menu">
+          <li id="icon"><img src="musicicon.png" width="70"></li>
+          <li id="menu_notice"><a href="Notice.html">Notice</a></li>
+          <li><a href="Music.html">Music</a></li>
+          <li><a href="Community.html">Community</a></li>
+        </ul>
+      </span>
+    </nav>
+    
+    <!-- ch4 참조
+    <nav>
+      <ul>
+        <li><a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+      </li>
+      </ul>
+    </nav>
+    -->
+    
+    
+    <!--
+    <div class="container">
+      <input id='search' type="text" class="input-search" style="padding-left: 0px;";/>
+    </div>
+    -->
+    
+
+    <div id="login_box">
+      <form>
+        <table>
+          <tbody align="center">
+            <tr>
+              <td>ID</td>
+              <td><input type="text" name="id"/></td>
+            </tr>
+            <tr>
+              <td>PW</td>
+              <td><input type="password" name="password" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  
+    <hr>
+
+    <a href="https://www.youtube.com/watch?v=j2aQ_NqeTNw">    
+      <img id="album_cover" src="https://cdnimg.melon.co.kr/cm/album/images/103/01/811/10301811_500.jpg?039203f014266d4701100ca6277271f3"/>
+    </a>
+    <a href="https://www.youtube.com/watch?v=-xm5GpFwHw4">    
+      <img id="album_cover" src="https://image.newsis.com/2020/09/22/NISI20200922_0000605672_web.jpg"/>
+    </a>
+
+  </body>
+</html>
