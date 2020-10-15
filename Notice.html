@@ -39,11 +39,15 @@
             margin-left: 350px;
             width:1000px;
             height:30px;
-            background-color:rgb(192, 235, 236);
+            background-color:rgb(231, 231, 231);
         }
-        tr{
+        th{
+            width:300px;
+            text-align:center;
         }
-        
+        #조회수{
+            text-align:right;
+        }
 
     </style>
 </head>
@@ -87,11 +91,16 @@
         </div>
 
         <div id="var" >
-            <table>
-                <tr>제목<tr>
-                <tr>등록일<tr>
-                <tr>조회수<tr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>등록일</th>
+                        <th id='조회수'>조회수</th>
+                    </tr>
+                </thead>
             </table>
+            <hr>
             
         </div>
         
