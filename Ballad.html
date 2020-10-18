@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Genre_Ballad</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        #icon{
+            list-style-type: none;
+            float:left;
+            padding-left:0px;
+            padding-top:10px;
+            margin-left:30px;
+        }
+        .pagination{
+            padding-left:0;
+            margin:0;
+            border-radius:0.25rem;
+            justify-content: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <li id="icon">
+        <a href="index.html">
+            <img src="musicicon.png" width="70">
+        </a>
+    </li>
+
+    <h1>Ballad</h1><hr>
+
+
+    <div class="image">
+        <a href="Ballad.html">    
+            <img id="album_cover" src="play.PNG" style="display:block"/>
+        </a>
+    </div>
+
+    <s_paging>
+        <div class="paging">
+            <a [##_prev_page_##] class="[##_no_more_prev_##]"><span>◀ Prev</span></a>
+            <span class="numbox">
+            <s_paging_rep>
+                <a [##_paging_rep_link_##] class="num"> [##_paging_rep_link_num_##]</a>
+            </s_paging_rep>
+            </span>
+            <a [##_next_page_##] class="[##_no_more_next_##]"><span> Next ▶</span></a>
+        </div>
+    </s_paging>
+
+    <nav class="pagination" remote="true">
+        <ul class="pagination">
+            <li class="prev previous_page disabled page-item">
+                <a class="page-link" data-remote="true" href="#">이전</a>
+            </li>
+            <li class="active page-item">
+                <a class="page-link" data-remote="true" href="#">1</a>
+            </li>
+            <li class="active page-item">
+                <a class="page-link" data-remote="true" href="#">2</a>
+            </li>
+            <li class="active page-item">
+                <a class="page-link" data-remote="true" href="#">3</a>
+            </li>
+            <li class="active page-item">
+                <a class="page-link" data-remote="true" href="#">4</a>
+            </li>
+            <li class="next next_page page-item">
+                <a class="page-link" data-remote="true" rel="next" href="#">다음</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
