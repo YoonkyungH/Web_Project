@@ -14,6 +14,7 @@
             margin-bottom: 8px;
             margin-top:30px;
             margin-left:15px;
+            border-radius: 25px;
         }
         .sitemap{
             float:left;
@@ -36,6 +37,20 @@
             padding-top:10px;
             margin-left:30px;
         }
+        #var {
+            margin-left: 350px;
+            width:1000px;
+            height:30px;
+            background-color:rgb(231, 231, 231);
+        }
+        th{
+            width:300px;
+            text-align:center;
+        }
+        #조회수{
+            text-align:right;
+        }
+        
     </style>
 
 </head>
@@ -48,6 +63,19 @@
 
     <h1>Community</h1><hr>
 
+    <div id="var" >
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>작성자</th>
+                    <th>제목</th>
+                    <th id='조회수'>게시일</th>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+    </div>
+    
     <div class="container">
         <div class="sitemap">
             <li id="community"><b>Community</b></li>
@@ -60,6 +88,8 @@
                 </ul>
         </div>
     </div>
+
+    
 
 </body>
 </html>
