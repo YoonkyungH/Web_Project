@@ -70,7 +70,17 @@
   <body>
 
     <script>
-      alert("Hello(´▽`ʃ💛ƪ)\nThis is a platform that recommends songs that you want!\nIf you go to Notice, you can see the site map.");
+      var date = new Date();
+
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+      var day = date.getDay();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+
+      alert("Hello(´▽`ʃ💛ƪ)\n"+
+      "\nThis is a platform that recommends songs that you want!\nIf you go to Notice, you can see the site map.\n\n"
+      +year+'/'+month+'/'+day+' '+hours+':'+minutes);
     </script>
     
     
