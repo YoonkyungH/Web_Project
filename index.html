@@ -66,6 +66,8 @@
       
       
     </style>
+
+    
   </head>
   <body>
 
@@ -77,6 +79,9 @@
       var day = date.getDate();
       var hours = date.getHours();
       var minutes = date.getMinutes();
+      if(minutes < 10){
+        minutes = "0" + date.getMinutes();
+      }
 
       alert("Hello(´▽`ʃ💛ƪ)\n"+
       "\nThis is a platform that recommends songs that you want!\nIf you go to Notice, you can see the site map.\n\n"
@@ -152,6 +157,7 @@
     <a href="https://www.youtube.com/watch?v=1GHaZ8Vrx3A">    
       <img id="album_cover" src="https://image.bugsm.co.kr/album/images/500/6099/609931.jpg"/>
     </a>
+
 
   </body>
 </html>
