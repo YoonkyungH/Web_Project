@@ -63,14 +63,10 @@
         opacity:0.5;
         border-radius: 50px;
       }
-      
-      
     </style>
-
     
   </head>
   <body>
-
     <script>
       var date = new Date();
 
@@ -88,7 +84,9 @@
       +year+'/'+month+'/'+day+' '+hours+':'+minutes);
     </script>
     
-    
+    <body onload = "showImage()">
+      <img id = "introImg" border="0">
+    </body>
     <nav>
       <span class="container">
         <ul class="menu">
@@ -101,6 +99,7 @@
         </ul>
       </span>
     </nav>
+    
     
     <!-- ch4 참조
     <nav>
@@ -138,8 +137,25 @@
     </div>
   
     <hr>
-
-    <a href="https://www.youtube.com/watch?v=j2aQ_NqeTNw">    
+    
+    <script language = "javascript">
+      var imgArray = new Array();
+      imgArray[0] = "https://cdnimg.melon.co.kr/cm/album/images/103/01/811/10301811_500.jpg?039203f014266d4701100ca6277271f3";
+      imgArray[1] = "https://image.newsis.com/2020/09/22/NISI20200922_0000605672_web.jpg";
+      imgArray[2] = "https://file3.instiz.net/data/file3/2018/02/01/0/2/7/027a30e34952dedc001cd2c44af79fb1.jpg"
+      imgArray[3] = "https://media.k-pop.rocks/images/ce09b14620ead97777fd.jpg";
+      
+      function showImage(){
+        var imgNum = Math.round(Math.random()*3);
+        var objImg = document.getElementById("introImg");
+        objImg.src = imgArray[imgNum];
+      }
+    </script>
+    <div onload = "showImage()">
+      <img id = "introImg" border="0">
+    </div>
+    <!--
+      <a href="https://www.youtube.com/watch?v=j2aQ_NqeTNw">    
       <img id="album_cover" src="https://cdnimg.melon.co.kr/cm/album/images/103/01/811/10301811_500.jpg?039203f014266d4701100ca6277271f3"/>
     </a>
     <a href="https://www.youtube.com/watch?v=-xm5GpFwHw4">    
@@ -157,6 +173,8 @@
     <a href="https://www.youtube.com/watch?v=1GHaZ8Vrx3A">    
       <img id="album_cover" src="https://image.bugsm.co.kr/album/images/500/6099/609931.jpg"/>
     </a>
+    -->
+    
 
 
   </body>
