@@ -63,6 +63,11 @@
         opacity:0.5;
         border-radius: 50px;
       }
+      #randomimg{
+        position: relative;
+        left: 200px;
+        top: 450px;
+      }
     </style>
     
   </head>
@@ -84,9 +89,7 @@
       +year+'/'+month+'/'+day+' '+hours+':'+minutes);
     </script>
     
-    <body onload = "showImage()">
-      <img id = "introImg" border="0">
-    </body>
+    
     <nav>
       <span class="container">
         <ul class="menu">
@@ -151,9 +154,10 @@
         objImg.src = imgArray[imgNum];
       }
     </script>
-    <div onload = "showImage()">
+    
+    <body onload = "showImage()">
       <img id = "introImg" border="0">
-    </div>
+    </body>
     <!--
       <a href="https://www.youtube.com/watch?v=j2aQ_NqeTNw">    
       <img id="album_cover" src="https://cdnimg.melon.co.kr/cm/album/images/103/01/811/10301811_500.jpg?039203f014266d4701100ca6277271f3"/>
