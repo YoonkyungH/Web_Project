@@ -68,12 +68,25 @@
             border-radius: 5px;
             opacity: 0.8;
         }
+
+        #welcome {
+            margin-top: 0px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            color:rgba(120, 150, 206, 0.863);
+            text-shadow: 4px 4px 3px rgba(70, 97, 156, 0.938), 8px 8px 6px rgb(128, 128, 128);
+        }
         
+        p {
+            text-align: center;
+        }
     </style>
     
 </head>
 <body>
-    <!--
+    
     <script>
         var date = new Date();
   
@@ -87,10 +100,10 @@
         }
   
         alert("Hello (´▽`ʃ💛ƪ)\n"+
-        "\nThis is a platform that recommends songs that you want!\nIf you go to Notice, you can see the site map.\n\n"
+        "\nWelcome to this platform where the admin recommends music.\n\n"
         +year+'/'+month+'/'+day+' '+hours+':'+minutes);
     </script>
-    -->
+    
     
     <nav id="topMenu" >
         <ul>
@@ -99,14 +112,15 @@
             <li><a class="menuLink" href="#">🎶</a></li>
             <li><a class="menuLink" href="#">🎵</a></li>
             <li><a class="menuLink" href="#">🎶</a></li>
-            <li><a class="menuLink" href="#">🎵</a></li>
+            <li><a class="menuLink" href="v2_top_1.html">🎵</a></li>
         </ul>
     </nav>
 
     <div class="container" id="fi_container">
-        <h1 style="margin-top: 0px; text-align: center; font-weight: bold; font-family: sans-serif; color:rgba(120, 150, 206, 0.863); text-shadow: 4px 4px 3px rgba(70, 97, 156, 0.938), 8px 8px 6px rgb(128, 128, 128);" class="display">&nbspWelcome </h1>
+        <h1 id="welcome" class="display">&nbspWelcome </h1>
             <p style="margin-left: 10px; text-align: center;">Hello(´▽`ʃ💛ƪ)&nbsp
                 This is a platform that recommends songs! You may not like it because it follow the manager's taste :(</p>
+                <p>상단 첫번째 🎵를 클릭하시면 오늘의 랜덤 추천곡을 볼 수 있습니다.</p>
                 <p style="margin-left: 10px; text-align: center;">
                     <a href="v2_box_1.html">🎧[PlayList] 우리는 말 없이 노을을 보며 검정치마와 잔나비의 노래를 들었다</a>
                 </p>
