@@ -11,37 +11,19 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-    <!--
     <script>
         $(document).ready(function () {
-            // 스타일 변경 및 이벤트를 연결
             $('#fi_container').css({
-                color: rgba(120, 150, 206, 0.863)
-            }).on({
-                click: function () {
-                    $(this).css('background', 'red');
-                },
-                mouseenter: function () {
-                    $(this).css('background', 'blue');
-                },
-                mouseleave: function () {
-                    $(this).css('background', 'orange');
-                }
-            });
+                width: 100,
+                height: 100,
+                background: 'rgb(169, 169, 169, 0.4)'
+            }).animate({
+                width: 1150,
+                height: 400,
+            }, 500);
         });
     </script>
-    -->
 
-    <script>
-        // 이벤트를 연결합니다.
-        $(document).ready(function () {
-            // 이벤트를 연결합니다.
-            $('button').click(function () {
-                // 간단한 효과를 적용합니다.
-                $('.page').fadeToggle('slow');
-            });
-        });
-    </script>
 
     <style>
         body {
@@ -118,18 +100,6 @@
         }
     </style>
     
-    <!--
-    <script>
-        // 이벤트를 연결합니다.
-        $(document).ready(function () {
-            // 이벤트를 연결합니다.
-            $('button').click(function () {
-                // 간단한 효과를 적용합니다.
-                $('container').fadeToggle('slow');
-            });
-        });
-    </script>
-    -->
 
 </head>
 <body>
@@ -164,7 +134,7 @@
     </nav>
 
     <div class="container" id="fi_container">
-        <h1 id="welcome" class="display">&nbspWelcome <!--<button>button</button>--></h1>
+        <h1 id="welcome" class="display">&nbspWelcome</h1>
             <p style="margin-left: 10px; text-align: center;">Hello(´▽`ʃ💛ƪ)&nbsp
                 This is a platform that recommends songs! You may not like it because it follow the manager's taste :(</p>
                 <p>상단 첫번째 🎵를 클릭하시면 오늘의 랜덤 추천곡을 볼 수 있습니다.</p>
