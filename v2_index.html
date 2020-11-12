@@ -11,6 +11,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+    <!--
     <script>
         $(document).ready(function () {
             $('#fi_container').css({
@@ -20,7 +21,19 @@
             }).animate({
                 width: 1150,
                 height: 400,
-            }, 500);
+            }, 2000);
+        });
+    </script>
+    -->
+    
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('button').click(function () {
+                // 간단한 효과를 적용합니다.
+                $('.container').fadeToggle('slow');
+            });
         });
     </script>
 
@@ -35,6 +48,8 @@
             height: 55px; 
             width: 100%;
             background-color: rgb(164, 208, 245, 0.4);
+            box-shadow: 5px 5px 10px rgb(162, 200, 231, 0.8);
+
         }
         #topMenu ul li {                       
             list-style: none;
@@ -82,7 +97,7 @@
             height: 200px;
             margin-right: 27.5px;
             border-radius: 5px;
-            opacity: 0.8;
+            opacity: 0.7;
         }
 
         #welcome {
@@ -97,6 +112,22 @@
         
         p {
             text-align: center;
+        }
+
+        button {
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid skyblue;
+            background-color: rgba(0, 0, 0, 0);
+            color: skyblue;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 20px;
+        }
+        button:hover {
+            color: rgb(70, 70, 70);
+            background-color: rgb(169, 221, 241);
+            opacity: 0.7;
         }
     </style>
     
@@ -116,9 +147,9 @@
           minutes = "0" + date.getMinutes();
         }
   
-        alert("Hello (´▽`ʃ💛ƪ)\n"+
-        "\nWelcome to this platform where the admin recommends music.\n\n"
-        +year+'/'+month+'/'+day+' '+hours+':'+minutes);
+        //alert("Hello (´▽`ʃ💛ƪ)\n"+
+        //"\nWelcome to this platform where the admin recommends music.\n좌측 상단 버튼을 누르시면 Welcome박스가 사라집니다.\n\n"
+        //+year+'/'+month+'/'+day+' '+hours+':'+minutes);
     </script>
     
     
@@ -132,6 +163,8 @@
             <li><a class="menuLink" href="v2_top_1.html">🎵</a></li>
         </ul>
     </nav>
+
+    <button>Click Me</button>
 
     <div class="container" id="fi_container">
         <h1 id="welcome" class="display">&nbspWelcome</h1>
@@ -156,7 +189,22 @@
             <a href="v2_bottom_3.html"><img class="card-img-top" src="image/붕어빵.jpg" alt=""></a>
             <a href="v2_bottom_4.html"><img class="card-img-top" src="image/크러쉬.jpg" alt=""></a>        
         </div>
-        
+    </div>
+    <div class="row text-center">
+        <div>
+            <a href="v2_bottom_2.html"><img class="card-img-top" src="image/크리스마스.jpg" alt=""></a>
+            <a href="v2_bottom_1.html"><img class="card-img-top" src="image/권정열.jpg" alt=""></a>
+            <a href="v2_bottom_3.html"><img class="card-img-top" src="image/기리보이.jpg" alt=""></a>
+            <a href="v2_bottom_4.html"><img class="card-img-top" src="image/한소희.jpg" alt=""></a>        
+        </div>
+    </div>
+    <div class="row text-center">
+        <div>
+            <a href="v2_bottom_2.html"><img class="card-img-top" src="image/home_card4.jpg" alt=""></a>
+            <a href="v2_bottom_1.html"><img class="card-img-top" src="image/여름.jpg" alt=""></a>
+            <a href="v2_bottom_3.html"><img class="card-img-top" src="image/home_card_2.jpg" alt=""></a>
+            <a href="v2_bottom_4.html"><img class="card-img-top" src="image/크러쉬.jpg" alt=""></a>        
+        </div>
     </div>
 </body>
 </html>
