@@ -56,6 +56,18 @@
             float: center;
             text-align: center;
         }
+
+        #fi_container {
+            background-color: rgb(219, 215, 215, 0.411);
+            margin-left: 200px;
+            margin-top: 30px;
+            float: center;
+            height: 450px; 
+            width: 1150px;
+            border-radius: 20px;
+            font-family: Corbel;
+            font-weight: bold;            
+        }
     </style>
     
 </head>
@@ -66,7 +78,7 @@
 
             <li><a class="menuLink" href="#">🎶</a></li>
             <li><a class="menuLink" href="#">🎵</a></li>
-            <li><a class="menuLink" href="#">🎶</a></li>
+            <li><a class="menuLink" href="v2_top_2.html">🎶</a></li>
             <li><a class="menuLink" href="v2_top_1.html">🎵</a></li>
         </ul>
     </nav>
@@ -75,43 +87,41 @@
        alert("새로고침 할 때마다 노래가 변해요 (๑•̀ㅂ•́)و✧")
     </script>
 
-    
-    <div>
-        <h1 class="주제">🎧 [오늘의 랜덤 추천곡]</h1>
+    <div class="container" id="fi_container">
+        <div>
+            <h1 class="주제" style="padding-top:30px;">🎧 [오늘의 랜덤 추천곡]</h1>
+        </div>
+        
+        <script language = "javascript">
+            var imgArray = new Array();
+
+            imgArray[0] = "image/랜덤/I'm bad too.png";
+            imgArray[1] = "image/랜덤/Mashimaro.png";
+            imgArray[2] = "image/랜덤/Reborn.png";
+            imgArray[3] = "image/랜덤/WeekEnd.png";
+            imgArray[4] = "image/랜덤/가끔.png";
+            imgArray[5] = "image/랜덤/괜찮아 사랑이야.png";
+            imgArray[6] = "image/랜덤/부재중.png";
+            imgArray[7] = "image/랜덤/슬퍼하지마.png";
+            imgArray[8] = "image/랜덤/야작시.png";
+            imgArray[9] = "image/랜덤/오늘, 비.png";
+            imgArray[10] = "image/랜덤/주요 우울증.png";
+            imgArray[11] = "image/랜덤/지금쯤.png";
+            imgArray[12] = "image/랜덤/좋을텐데.png";
+            imgArray[13] = "image/랜덤/처음.png";
+
+            
+            function showImage(){
+            var imgNum = Math.round(Math.random()*13);
+            var objImg = document.getElementById("introImg");
+            objImg.src = imgArray[imgNum];
+            }
+            
+        </script>
+        <body onload = "showImage()" class="ranimg">
+            <a href="https://www.youtube.com/"><img id = "introImg" border="0"></a>
+        </body>
+        
     </div>
-    
-    
-
-    <script language = "javascript">
-        var imgArray = new Array();
-
-        imgArray[0] = "image/랜덤/I'm bad too.png";
-        imgArray[1] = "image/랜덤/Mashimaro.png";
-        imgArray[2] = "image/랜덤/Reborn.png";
-        imgArray[3] = "image/랜덤/WeekEnd.png";
-        imgArray[4] = "image/랜덤/가끔.png";
-        imgArray[5] = "image/랜덤/괜찮아 사랑이야.png";
-        imgArray[6] = "image/랜덤/부재중.png";
-        imgArray[7] = "image/랜덤/슬퍼하지마.png";
-        imgArray[8] = "image/랜덤/야작시.png";
-        imgArray[9] = "image/랜덤/오늘, 비.png";
-        imgArray[10] = "image/랜덤/주요 우울증.png";
-        imgArray[11] = "image/랜덤/지금쯤.png";
-        imgArray[12] = "image/랜덤/좋을텐데.png";
-        imgArray[13] = "image/랜덤/처음.png";
-
-        
-        function showImage(){
-          var imgNum = Math.round(Math.random()*13);
-          var objImg = document.getElementById("introImg");
-          objImg.src = imgArray[imgNum];
-        }
-        
-      </script>
-      <body onload = "showImage()" class="ranimg">
-        <a href="https://www.youtube.com/"><img id = "introImg" border="0"></a>
-      </body>
-      
-
 </body>
 </html>
