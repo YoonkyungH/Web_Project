@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mu🎧sic</title>
+
+  <style>
+    body {
+        margin: 0px;
+    }
+    #topMenu {
+        display: inline-block;
+        text-align: left;
+        height: 55px; 
+        width: 100%;
+        background-color: rgb(164, 208, 245, 0.4);
+        box-shadow: 5px 5px 10px rgb(162, 200, 231, 0.8);
+
+    }
+    #topMenu ul li {                       
+        list-style: none;
+        color: white;               
+        background-color: rgb(164, 208, 245, 0);  
+        float: right;                
+        vertical-align: middle;     
+    }
+    #topMenu .menuLink {                              
+        text-decoration:none;                     
+        color: rgb(121, 121, 121);                              
+        display: block;                            
+        width: 150px;                              
+        font-size: 20px;                           
+        font-weight: bold;                         
+    }
+    #topMenu .menuLink:hover {          
+        color: rgb(63, 95, 165);                   
+    }
+
+    .main_container {
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .content {
+      width: 80%;
+      height: auto;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: rgba(219, 215, 215, 0.411);
+      border-radius: 20px;
+    }
+
+    /* 게시판 행 간격 */
+    .main_container {
+      line-height: 2em;
+    }
+    ul,
+    li {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    #mainWrapper {
+      width: 80%;
+      margin: 0 auto; /*가운데 정렬*/
+      height: auto;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      background-color: rgba(219, 215, 215, 0.411);
+      border-radius: 20px;
+    }
+    #mainWrapper #title {
+      padding-top: 10px;
+      font-weight: bold;
+    }
+    #mainWrapper > ul > li:first-child {
+      text-align: center;
+      font-size: 14pt;
+      height: 40px;
+      vertical-align: middle;
+      line-height: 30px;
+    }
+    #ulTable {
+      margin-top: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #ulTable > li:first-child > ul > li {
+      background-color: rgba(164, 208, 245, 0.4);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #ulTable > li > ul {
+      clear: both;
+      padding: 0px auto;
+      position: relative;
+      min-width: 40px;
+    }
+    #ulTable > li > ul > li {
+      float: left;
+      font-size: 10pt;
+      border-bottom: 1px solid rgb(163, 163, 163);
+      vertical-align: baseline;
+      background-color: rgb(247, 247, 247);
+    }
+
+    #ulTable > li > ul > li:first-child {
+      width: 10%;
+    }
+    /*제목 열 크기*/
+    #ulTable > li > ul > li:first-child + li {
+      width: 45%;
+    }
+    /*작성일 열 크기*/
+    #ulTable > li > ul > li:first-child + li + li {
+      width: 20%;
+    }
+    /*작성자 열 크기*/
+    #ulTable > li > ul > li:first-child + li + li + li {
+      width: 15%;
+    }
+    /*조회수 열 크기*/
+    #ulTable > li > ul > li:first-child + li + li + li + li {
+      width: 10%;
+    }
+
+    #divPaging {
+      clear: both;
+      margin: 0 auto;
+      width: 220px;
+      height: 50px;
+      padding-top: 20px;
+    }
+    #divPaging > div {
+      float: left;
+      width: 30px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <nav id="topMenu" >
+    <ul class="Menuul">
+        <li class="Menuli" style="float: left; font-family: Corbel; padding-top:10px;"><a class="menuLink" href="v2_index.html">Mu🎧sic</a></li>
+
+        <li><a class="menuLink" style="padding-top:10px;" href="#">🎶</a></li>
+        <li><a class="menuLink" style="padding-top:10px;" href="#">🎵</a></li>
+        <li><a class="menuLink" style="padding-top:10px;" href="v2_top_2.html">🎶</a></li>
+        <li><a class="menuLink" style="padding-top:10px;" href="v2_top_1.html">🎵</a></li>
+    </ul>
+  </nav>
+
+<!-- main_container-->
+<div class="main_container">
+  <div id="mainWrapper">
+    <ul>
+      <!-- 게시판 제목 -->
+      <li id="title">커뮤니티</li>
+
+      <!-- 게시판 목록  -->
+      <li>
+        <ul id="ulTable">
+          <li>
+            <ul>
+              <li>No</li>
+              <li>제목</li>
+              <li>작성일</li>
+              <li>작성자</li>
+              <li>조회수</li>
+            </ul>
+          </li>
+          <!-- 게시물이 출력될 영역 -->
+          <li>
+            <ul>
+              <li>1</li>
+              <li class="left">제목 1</li>
+              <li>2020.11.04</li>
+              <li>배연주</li>
+              <li>0</li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>2</li>
+              <li class="left">제목 2</li>
+              <li>2020.11.04</li>
+              <li>연주</li>
+              <li>0</li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>3</li>
+              <li class="left">제목 3</li>
+              <li>2020.11.04</li>
+              <li>BYJ</li>
+              <li>3</li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>4</li>
+              <li class="left">제목 4</li>
+              <li>2020.11.04</li>
+              <li>20181495</li>
+              <li>5</li>
+            </ul>
+          </li>
+
+          <li></li>
+        </ul>
+      </li>
+
+      <!-- 게시판 페이징 영역 -->
+      <li>
+        <div id="divPaging">
+          <div>◀</div>
+          <div><b>1</b></div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>▶</div>
+        </div>
+      </li>
+</body>
+</html>
