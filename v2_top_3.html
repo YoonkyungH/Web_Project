@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mu🎧sic</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+    <!--
+        <link href="index_style.css" rel="stylesheet">
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!--
+    <script>
+        $(document).ready(function () {
+            $('#fi_container').css({
+                width: 100,
+                height: 100,
+                background: 'rgb(169, 169, 169, 0.4)'
+            }).animate({
+                width: 1150,
+                height: 400,
+            }, 2000);
+        });
+    </script>
+    -->
+    
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('button').click(function () {
+                // 간단한 효과를 적용합니다.
+                $('.container').fadeToggle('slow');
+            });
+        });
+
+        
+    </script>
+
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        #topMenu {
+            display: inline-block;
+            text-align: left;
+            height: 55px; 
+            width: 100%;
+            background-color: rgb(164, 208, 245, 0.4);
+            box-shadow: 5px 5px 10px rgb(162, 200, 231, 0.8);
+        }
+        #topMenu ul li {                       
+            list-style: none;
+            color: white;               
+            background-color: rgb(164, 208, 245, 0);  
+            float: right;                
+            vertical-align: middle;     
+        }
+        #topMenu .menuLink {                              
+            text-decoration:none;                     
+            color: rgb(121, 121, 121);                              
+            display: block;                            
+            width: 150px;                              
+            font-size: 20px;                           
+            font-weight: bold;            
+        }
+        #topMenu .menuLink:hover {          
+            color: rgb(63, 95, 165);                   
+        }
+        
+
+        #fi_container {
+            background-color: rgb(219, 215, 215, 0.411);
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 30px;
+            float: center;
+            height: 400px; 
+            width: 1150px;
+            border-radius: 8px;
+            font-family: Corbel;
+            font-weight: bold;     
+                             
+        }
+        .display {
+            font-size: 4.5rem;
+            font-weight: 300;
+            line-height: 2;
+        }
+
+        .text-center {
+            display: auto;
+            margin: 25px;
+            margin-left: 200px;
+            margin-right: 0px;
+        }
+        .card-img-top {
+            width: 262px;
+            height: 200px;
+            margin-right: 27.5px;
+            /*border-radius: 5px;*/
+            opacity: 0.7;
+            border-style: outset;
+            border-width: 3px;
+            border-color:rgba(177, 202, 255, 0.8);
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            border-radius: 5px;        
+        }
+
+        #welcome {
+            margin-top: 0px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            color:rgba(120, 150, 206, 0.863);
+            text-shadow: 4px 4px 3px rgba(70, 97, 156, 0.938), 8px 8px 6px rgb(128, 128, 128);
+        }
+        
+        p {
+            text-align: center;
+        }
+
+        button {
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid rgb(190, 135, 235);
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(190, 135, 235);
+            
+        }
+        button:hover {
+            color: rgb(70, 70, 70);
+            background-color: rgb(217, 152, 255);
+            opacity: 0.7;
+        }
+
+        #제목 {
+            position: absolute;
+            top: 40%;
+            color:rgb(70, 70, 70);
+            font-weight: bold;
+            font-family: 나눔스퀘어;
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+    <script>
+        var date = new Date();
+  
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        if(minutes < 10){
+          minutes = "0" + date.getMinutes();
+        }
+  
+        //alert("Hello (´▽`ʃ💛ƪ)\n"+
+        //"\nWelcome to this platform where the admin recommends music.\n상단 중앙에 있는 clickme 버튼을 누르시면 Welcome박스가 사라집니다.\n\n"
+        //+year+'/'+month+'/'+day+' '+hours+':'+minutes);
+    </script>
+    
+    
+    <nav id="topMenu" >
+        <ul>
+            <li style="float: left; font-family: Corbel;"><a class="menuLink" href="v2_index.html">Mu🎧sic</a></li>
+            
+            <li><a class="menuLink" href="#">🎶</a></li>
+            <li><a class="menuLink" href="v2_top_2.html">🎵</a></li>
+            <li><a class="menuLink" href="v2_top_1.html">🎶</a></li>
+            <li><a class="menuLink" href="v2_top_3.html">🎵</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class="row text-center">
+        <div>
+            <div class="card-img-top"><div id="제목" style="left: 5%;"><a href="v2_bottom_2.html">🎧[PlayList]</br>따뜻한 봄날, 흩날리는 벚꽃잎과 함께</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 2%;"><a href="v2_bottom_1.html">🎧[PlayList]</br>겨울을 지나 여름을 기다리며 듣는 노래</a></div></div>
+            <div class="card-img-top"><div id="제목" style="top: 30%;"><a href="v2_bottom_3.html">🎧[PlayList]<br>⏮ Hoody - Your Eyes (Feat. 박재범) - Official Music Video ⏭</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 20%;"><a href="v2_bottom_4.html">🎧[PlayList]<br>두유와 로즈와 크러쉬</a></div></div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div>
+            <div class="card-img-top"><div id="제목" style="left: 25%;"><a href="v2_bottom_5.html">🎧[PlayList]<br>Merry Christmas!</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 18%;"><a href="v2_bottom_6.html">🎧[PlayList]<br>가을 바람을 타고 온 인디</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 23%;"><a href="v2_bottom_7.html">🎧[PlayList]<br>기리보이의 사랑노래</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 10%;"><a href="v2_bottom_8.html">🎧[PlayList]<br>그건 아마 우리의 잘못은 아닐거야</a></div></div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div>
+            <div class="card-img-top"><div id="제목" style="left: 7%;"><a href="v2_bottom_9.html">🎧[PlayList]<br>우리 모두는 누군가의 첫사랑이었다.</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 10%;"><a href="v2_bottom_10.html">🎧[PlayList]<br>코딩할 때 들으면 화 덜나는 노래</a></div></div>
+            <div class="card-img-top"><div id="제목"><a href="v2_bottom_11.html">🎧[PlayList]<br>넷플릭스 여주인공으로 보내버리는 팝송</a></div></div>
+            <div class="card-img-top"><div id="제목" style="left: 23%;"><a href="v2_bottom_12.html">🎧[PlayList]<br>노래방에 모기가 있어</a></div></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
