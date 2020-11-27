@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mu🎧sic</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
     <!--
         <link href="index_style.css" rel="stylesheet">
     -->
@@ -35,6 +38,8 @@
                 $('.container').fadeToggle('slow');
             });
         });
+
+        
     </script>
 
 
@@ -49,7 +54,6 @@
             width: 100%;
             background-color: rgb(164, 208, 245, 0.4);
             box-shadow: 5px 5px 10px rgb(162, 200, 231, 0.8);
-
         }
         #topMenu ul li {                       
             list-style: none;
@@ -64,7 +68,7 @@
             display: block;                            
             width: 150px;                              
             font-size: 20px;                           
-            font-weight: bold;                         
+            font-weight: bold;            
         }
         #topMenu .menuLink:hover {          
             color: rgb(63, 95, 165);                   
@@ -72,15 +76,17 @@
         
 
         #fi_container {
-            background-color: rgb(169, 169, 169, 0.4);
+            background-color: rgb(219, 215, 215, 0.411);
             margin-left: 200px;
+            margin-right: 200px;
             margin-top: 30px;
             float: center;
             height: 400px; 
             width: 1150px;
             border-radius: 8px;
             font-family: Corbel;
-            font-weight: bold;            
+            font-weight: bold;     
+                             
         }
         .display {
             font-size: 4.5rem;
@@ -89,6 +95,7 @@
         }
 
         .text-center {
+            display: auto;
             margin: 25px;
             margin-left: 200px;
             margin-right: 0px;
@@ -99,6 +106,7 @@
             margin-right: 27.5px;
             border-radius: 5px;
             opacity: 0.7;
+            
         }
 
         #welcome {
@@ -128,6 +136,8 @@
             background-color: rgb(217, 152, 255);
             opacity: 0.7;
         }
+
+        
     </style>
     
 
@@ -147,7 +157,7 @@
         }
   
         alert("Hello (´▽`ʃ💛ƪ)\n"+
-        "\nWelcome to this platform where the admin recommends music.\n상단 중앙에 있는 버튼을 누르시면 Welcome박스가 사라집니다.\n\n"
+        "\nWelcome to this platform where the admin recommends music.\n상단 중앙에 있는 clickme 버튼을 누르시면 Welcome박스가 사라집니다.\n\n"
         +year+'/'+month+'/'+day+' '+hours+':'+minutes);
     </script>
     
@@ -158,16 +168,16 @@
             
 
             <li><a class="menuLink" href="#">🎶</a></li>
-            <li><a class="menuLink" href="#">🎵</a></li>
+            <li><a class="menuLink" href="v2_top_3.html">🎵</a></li>
             <li><a class="menuLink" href="v2_top_2.html">🎶</a></li>
             <li><a class="menuLink" href="v2_top_1.html">🎵</a></li>
             <li class="menuLink"><button>Click Me</button></li>
         </ul>
     </nav>
-
     
 
     <div class="container" id="fi_container">
+        <!--<p style="color:rgb(63, 95, 165, 0.4)">click me를 누르시면 welcome 박스가 사라져 더 편히 감상할 수 있습니다.</p>-->
         <h1 id="welcome" class="display">&nbspWelcome</h1>
             <p style="margin-left: 10px; text-align: center;">Hello(´▽`ʃ💛ƪ)&nbsp
                 This is a platform that recommends songs! You may not like it because it follow the manager's taste :(</p>
@@ -194,18 +204,20 @@
     <div class="row text-center">
         <div>
             <a href="v2_bottom_5.html"><img class="card-img-top" src="image/크리스마스.jpg" alt=""></a>
-            <a href="v2_bottom_6.html"><img class="card-img-top" src="image/권정열.jpg" alt=""></a>
+            <a href="v2_bottom_6.html"><img class="card-img-top" src="image/home_card4.jpg" alt=""></a>
             <a href="v2_bottom_7.html"><img class="card-img-top" src="image/기리보이.jpg" alt=""></a>
             <a href="v2_bottom_8.html"><img class="card-img-top" src="image/한소희.jpg" alt=""></a>        
         </div>
     </div>
     <div class="row text-center">
         <div>
-            <a href="v2_bottom_9.html"><img class="card-img-top" src="image/home_card4.jpg" alt=""></a>
+            <a href="v2_bottom_9.html"><img class="card-img-top" src="image/권정열.jpg" alt=""></a>
             <a href="v2_bottom_10.html"><img class="card-img-top" src="image/home_card2.jpg" alt=""></a>
             <a href="v2_bottom_11.html"><img class="card-img-top" src="image/home_card33.jpg" alt=""></a>
             <a href="v2_bottom_12.html"><img class="card-img-top" src="image/home_card1.jpg" alt=""></a>        
         </div>
     </div>
+
+
 </body>
 </html>
